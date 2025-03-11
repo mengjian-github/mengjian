@@ -10,9 +10,6 @@
 [submodule "mengjian-homepage"]
 	path = mengjian-homepage
 	url = https://github.com/mengjian-github/homepage.git
-[submodule "wechat-operation"]
-	path = wechat-operation
-	url = https://github.com/mengjian-github/wechat-operation.git
 [submodule "personal-ip"]
 	path = personal-ip
 	url = https://github.com/mengjian-github/personal-ip.git
