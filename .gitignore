@@ -45,4 +45,10 @@ coverage/
 .coverage
 .nyc_output
 .DS_Store
-*.pem 
+*.pem
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
