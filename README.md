@@ -1,36 +1,56 @@
-# 孟健的个人项目集合
+# Personal IP Management
 
-这是一个个人项目集合仓库，采用类似monorepo的方式组织，使用git submodule管理各个子项目。
+这是一个用于管理个人IP发展的私有仓库，包含IP定位、对标分析、目标规划等内容。
 
-## 项目结构
+## 目录结构
 
-- `lark-to-markdown`: 飞书文档转Markdown工具
-- `mengjian-github`: GitHub相关项目
-- `mcp-cn`: MCP中文版
-- `mengjian-homepage`: 个人主页
-- `wechat-operation`: 微信运营相关工具
-
-## 使用方法
-
-### 克隆仓库及所有子模块
-
-```bash
-git clone --recursive https://github.com/yourusername/mengjian.git
+```
+.
+├── strategy/           # 策略规划
+│   ├── positioning/    # IP定位
+│   ├── benchmarking/   # 对标分析
+│   └── okr/           # OKR目标
+├── docs/              # 文档
+│   ├── research/      # 研究资料
+│   └── analysis/      # 分析报告
+└── templates/         # 模板文件
 ```
 
-### 更新所有子模块
+## 主要内容
 
-```bash
-git submodule update --remote --merge
-```
+### IP定位 (strategy/positioning)
+- 个人品牌定位
+- 目标受众分析
+- 差异化策略
+- 核心价值主张
 
-### 添加新的子模块
+### 对标分析 (strategy/benchmarking)
+- 竞品分析
+- 最佳实践研究
+- 差距分析
+- 机会点识别
 
-```bash
-git submodule add <repository-url> <path>
-git commit -m "Add new submodule"
-```
+### OKR目标 (strategy/okr)
+- 年度OKR
+- 季度OKR
+- 月度复盘
+- 目标调整
 
-## 开发指南
+### 研究资料 (docs/research)
+- 行业趋势研究
+- 用户需求分析
+- 技术发展趋势
+- 市场机会研究
 
-每个子项目都有自己的开发流程和依赖，请参考各子项目中的README文件获取详细信息。 
+### 分析报告 (docs/analysis)
+- 数据分析报告
+- 效果评估报告
+- 策略优化建议
+- 发展路径规划
+
+## 使用指南
+
+1. 所有文档使用Markdown格式编写
+2. 遵循templates目录中的模板规范
+3. 定期更新和复盘
+4. 保持文档的结构化和系统性 
