@@ -16,3 +16,6 @@
 [submodule "study-notes"]
 	path = study-notes
 	url = https://github.com/mengjian-github/study-notes.git
+[submodule "wechat-mp"]
+	path = wechat-mp
+	url = https://github.com/mengjian-github/wechat-mp.git
