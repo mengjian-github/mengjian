@@ -16,3 +16,6 @@
 [submodule "personal-ip"]
 	path = personal-ip
 	url = https://github.com/mengjian-github/personal-ip.git
+[submodule "study-notes"]
+	path = study-notes
+	url = https://github.com/mengjian-github/study-notes.git
