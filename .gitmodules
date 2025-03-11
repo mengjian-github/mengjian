@@ -1,0 +1,15 @@
+[submodule "lark-to-markdown"]
+	path = lark-to-markdown
+	url = https://github.com/mengjian-github/lark-to-markdown.git
+[submodule "mengjian-github"]
+	path = mengjian-github
+	url = https://github.com/mengjian-github/mengjian-github.git
+[submodule "mcp-cn"]
+	path = mcp-cn
+	url = https://github.com/mengjian-github/mcp-cn.git
+[submodule "mengjian-homepage"]
+	path = mengjian-homepage
+	url = https://github.com/mengjian-github/homepage.git
+[submodule "wechat-operation"]
+	path = wechat-operation
+	url = https://github.com/mengjian-github/wechat-operation.git
