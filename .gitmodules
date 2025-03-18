@@ -22,3 +22,6 @@
 [submodule "diary"]
 	path = diary
 	url = https://github.com/mengjian-github/diary.git
+[submodule "deepseek-newsletter"]
+	path = deepseek-newsletter
+	url = https://github.com/mengjian-github/mengjian.git
