@@ -1,13 +1,14 @@
-# 微信群聊日报系统
+# 微信群聊日报系统（wechat-daily-report）
 
-一个基于React的微信群聊日报系统，用于展示和总结群聊记录。
+一个基于 React + TypeScript 的微信群聊日报系统，支持群聊消息的可视化浏览、自动总结与美观导出。
 
 ## 功能特点
 
 - 📅 按日期查看群聊记录
-- 📊 自动生成群聊总结
-- 🎨 美观的UI界面
-- 📱 响应式设计
+- 📊 自动生成群聊总结（话题、统计、金句、待办等）
+- 🎨 美观的 UI 界面，支持导出
+- 📱 响应式设计，适配多端
+- 📝 支持自定义群聊数据
 
 ## 技术栈
 
@@ -20,125 +21,81 @@
 - Axios
 - Day.js
 
-## 开始使用
+## 快速开始
 
-### 安装依赖
+### 1. 安装依赖
 
 ```bash
 npm install
 ```
 
-### 开发模式
+### 2. 启动开发环境
 
 ```bash
 npm start
 ```
 
-### 构建生产版本
+### 3. 构建生产版本
 
 ```bash
 npm run build
 ```
 
-## 环境变量
+## 数据自定义与配置
 
-创建 `.env` 文件并设置以下环境变量：
+本项目默认使用本地 mock 数据进行演示。你可以通过修改 `src/data/messages.ts` 文件，加载你自己的群聊消息和日报数据。
 
+**推荐流程：**
+1. 复制 `src/data/messages.example.ts` 为 `src/data/messages.ts`
+2. 按照 example 文件中的格式，填充你的群聊数据
+3. 保存后刷新页面即可看到效果
+
+> 数据结构详细说明请参考 `src/types/index.ts`。
+
+### 数据格式示例
+
+```ts
+export const groupMessages = {
+  'group1': {
+    name: '示例群聊',
+    messages: {
+      '2025-04-30': {
+        messages: [ /* 群聊消息数组 */ ],
+        digest: { /* 日报总结对象 */ }
+      }
+    }
+  }
+};
 ```
-REACT_APP_API_BASE_URL=你的API地址
-```
 
-## 项目结构
+详细字段说明和自定义技巧可参考[这篇文章](https://mp.weixin.qq.com/s/uQ_SZECCEdxlUUpnCWNF-g)。
+
+## 目录结构
 
 ```
 src/
-  ├── assets/        # 静态资源
-  ├── components/    # 共用组件
+  ├── components/    # 复用组件
   ├── pages/         # 页面组件
-  ├── services/      # API服务
-  ├── store/         # Redux store
-  ├── types/         # TypeScript类型定义
-  └── utils/         # 工具函数
+  ├── data/          # 群聊数据（messages.ts）
+  ├── types/         # TypeScript 类型定义
+  └── ...            # 其他
 ```
 
-## API接口
+## 常见问题（FAQ）
 
-### 获取聊天记录
+**Q: 如何自定义群聊数据？**  
+A: 复制 `src/data/messages.example.ts` 为 `src/data/messages.ts`，并按格式填写。
 
-```
-GET /api/chat-logs?date=YYYY-MM-DD&groupId=xxx
-```
+**Q: 支持哪些消息类型？**  
+A: 支持文本、图片、链接、表情等，详见 `src/types/index.ts`。
 
-### 生成日报总结
-
-```
-POST /api/generate-summary
-{
-  "date": "YYYY-MM-DD",
-  "groupId": "xxx"
-}
-```
-
-# 个人项目集合
-
-这是我的个人项目集合，包含多个子项目，每个项目都有其特定的用途和目标。
-
-## 项目列表
-
-### 学习笔记 (study-notes)
-- 用于整理个人学习笔记的知识库
-- 涵盖技术、管理、产品等多个领域
-- 使用结构化的模板和分类系统
-
-### 个人IP (personal-ip)
-- 个人品牌建设项目
-- 包含内容创作、社交媒体运营等
-- 建立个人影响力
-
-### 微信公众号 (wechat-mp)
-- 公众号内容管理和运营
-- 粉丝互动和数据分析
-- 内容创作和排期管理
-
-### 个人主页 (mengjian-homepage)
-- 个人网站项目
-- 展示个人作品和经历
-- 技术博客分享
-
-### MCP中文版 (mcp-cn)
-- MCP项目的中文本地化
-- 技术文档翻译
-- 中文社区建设
-
-### GitHub个人主页 (mengjian-github)
-- GitHub个人主页定制
-- 项目展示和统计
-- 个人介绍
-
-### 飞书文档转换 (lark-to-markdown)
-- 飞书文档转Markdown工具
-- 支持多种格式转换
-- 保持文档结构完整
-
-## 使用说明
-
-1. 每个子项目都是独立的Git仓库
-2. 使用Git子模块管理项目关系
-3. 每个项目都有自己的README和文档
-4. 定期更新和维护各个项目
-
-## 项目状态
-
-| 项目名称 | 状态 | 最后更新 |
-|---------|------|---------|
-| study-notes | 活跃 | 2024-03-11 |
-| personal-ip | 规划中 | 2024-03-11 |
-| wechat-mp | 开发中 | 2024-03-11 |
-| mengjian-homepage | 开发中 | 2024-03-11 |
-| mcp-cn | 开发中 | 2024-03-11 |
-| mengjian-github | 活跃 | 2024-03-11 |
-| lark-to-markdown | 开发中 | 2024-03-11 |
+**Q: 如何部署到生产环境？**  
+A: 构建后将 `build/` 目录部署到任意静态服务器即可。
 
 ## 贡献
 
-欢迎对任何子项目提出建议或贡献代码。每个项目都有自己的贡献指南，请参考各自的文档。 
+欢迎提 issue 或 PR 参与改进！
+
+---
+
+> 数据结构和自定义方法详见：[微信群聊日报数据格式与玩法](https://mp.weixin.qq.com/s/uQ_SZECCEdxlUUpnCWNF-g) 
