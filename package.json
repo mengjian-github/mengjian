@@ -1,14 +1,21 @@
 {
-  "dependencies": {
-    "@upstash/context7-mcp": "^1.0.9",
-    "framer-motion": "^12.9.4"
+  "name": "mengjian-monorepo",
+  "version": "1.0.0",
+  "description": "孟坚的代码仓库 - 包含多个项目的主仓库",
+  "author": "孟坚 <mengjian.github@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mengjian-github/mengjian.git"
   },
-  "devDependencies": {
-    "buffer": "^6.0.3",
-    "crypto-browserify": "^3.12.1",
-    "process": "^0.11.10",
-    "stream-browserify": "^3.0.0",
-    "util": "^0.12.5",
-    "vm-browserify": "^1.1.2"
-  }
+  "scripts": {
+    "update-submodules": "git submodule update --remote",
+    "status": "git submodule foreach 'echo \"=== $name ===\" && git status'"
+  },
+  "keywords": [
+    "monorepo",
+    "submodules",
+    "projects",
+    "portfolio"
+  ]
 }
