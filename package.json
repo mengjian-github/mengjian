@@ -1,8 +1,8 @@
 {
   "name": "mengjian-monorepo",
   "version": "1.0.0",
-  "description": "孟坚的代码仓库 - 包含多个项目的主仓库",
-  "author": "孟坚 <mengjian.github@gmail.com>",
+  "description": "孟健的代码仓库 - 包含多个项目的主仓库",
+  "author": "孟健 <mengjian.github@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
