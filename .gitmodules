@@ -28,3 +28,6 @@
 [submodule "wechat-daily-report"]
 	path = wechat-daily-report
 	url = https://github.com/mengjian-github/wechat-daily-report.git
+[submodule "ai-daily-generator"]
+	path = ai-daily-generator
+	url = https://github.com/mengjian-github/ai-daily-generator.git
