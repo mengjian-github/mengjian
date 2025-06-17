@@ -31,6 +31,3 @@
 [submodule "ai-daily-generator"]
 	path = ai-daily-generator
 	url = https://github.com/mengjian-github/ai-daily-generator.git
-[submodule "auto-video-editor"]
-	path = auto-video-editor
-	url = https://github.com/mengjian-github/auto-video-editor.git
