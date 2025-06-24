@@ -31,3 +31,6 @@
 [submodule "ai-daily-generator"]
 	path = ai-daily-generator
 	url = https://github.com/mengjian-github/ai-daily-generator.git
+[submodule "wechat-mp-assistant"]
+	path = wechat-mp-assistant
+	url = https://github.com/mengjian-github/wechat-mp-assistant.git
