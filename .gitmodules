@@ -37,3 +37,6 @@
 [submodule "300-micro-habits"]
 	path = 300-micro-habits
 	url = https://github.com/mengjian-github/300-micro-habits.git
+[submodule "ziliu"]
+	path = ziliu
+	url = https://github.com/mengjian-github/ziliu.git
