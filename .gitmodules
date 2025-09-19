@@ -40,3 +40,6 @@
 [submodule "ziliu"]
 	path = ziliu
 	url = https://github.com/mengjian-github/ziliu.git
+[submodule "ai-bootcamp-showcase"]
+	path = ai-bootcamp-showcase
+	url = https://github.com/mengjian-github/ai-bootcamp-showcase.git
