@@ -10,7 +10,8 @@
   },
   "scripts": {
     "update-submodules": "git submodule update --remote",
-    "status": "git submodule foreach 'echo \"=== $name ===\" && git status'"
+    "status": "git submodule foreach 'echo \"=== $name ===\" && git status'",
+    "build": "echo Build OK: static repo — no compile step"
   },
   "keywords": [
     "monorepo",
