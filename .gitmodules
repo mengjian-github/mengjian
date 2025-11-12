@@ -55,3 +55,6 @@
 [submodule "poe327"]
 	path = poe327
 	url = https://github.com/mengjian-github/poe327.git
+[submodule "cowboy-safari"]
+	path = cowboy-safari
+	url = https://github.com/mengjian-github/cowboy-safari.git
